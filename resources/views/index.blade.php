@@ -104,7 +104,7 @@
                             <a href="course.html" class="nav-item nav-link">INFO PPDB</a>
                             <a href="contact.html" class="nav-item nav-link">KONTAK</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
+                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Daftar Sekarang</a>
                     </div>
                 </nav>
             </div>
@@ -167,22 +167,19 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="text-left mb-4">
-                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
-                        <h1>Sambutan Kepala Sekolah</h1>
+                        <h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">SAMBUTAN KEPALA SEKOLAH</h1>
+                        <h5>Tri Haryani,S.Pd.</h5>
                     </div>
                     <p align="justify"> Assalamu’alaikum warahmatullahi wabarakatuh,
                         Salam sejahtera bagi kita semua,
-                        Puji syukur kehadirat Allah SWT, karena atas rahmat dan karunia-Nya, SD Negeri Nyatnyono 01 dapat terus memberikan layanan pendidikan terbaik bagi generasi penerus bangsa. Kami bangga menjadi bagian dari proses mencetak anak-anak yang cerdas, berakhlak mulia, dan memiliki keterampilan abad 21 yang unggul.
-                        Dalam era digital saat ini, kehadiran website sekolah ini menjadi langkah maju kami dalam memudahkan komunikasi, transparansi, dan pelayanan informasi kepada seluruh stakeholder, baik itu siswa, orang tua, maupun masyarakat luas. Melalui platform ini, kami berharap semua informasi mengenai kegiatan akademik dan non-akademik di sekolah dapat diakses dengan mudah dan cepat.
-                        Kami berkomitmen untuk terus meningkatkan kualitas pendidikan melalui inovasi pembelajaran yang kreatif dan mendukung pengembangan potensi anak-anak. Tidak hanya dalam bidang akademik, tetapi juga dalam pembentukan karakter yang berlandaskan nilai-nilai luhur pancasila.
-                        Akhir kata, saya mengucapkan terima kasih kepada seluruh dewan guru, staf, komite sekolah, serta orang tua siswa yang telah memberikan dukungan penuh bagi kemajuan SD Negeri Nyatnyono 01. Semoga sinergi yang baik ini dapat terus terjalin dan membawa kemajuan bagi anak-anak kita tercinta.
-                        Wassalamu’alaikum warahmatullahi wabarakatuh.
+                        Puji syukur kehadirat Allah SWT, atas rahmat-Nya
+                        SD Negeri Nyatnyono 01 terus berkomitmen memberikan pendidikan terbaik bagi generasi penerus bangsa. Kami bangga mendidik anak-anak agar cerdas, berakhlak mulia, dan siap menghadapi tantangan era digital.
+                        Website ini hadir untuk memudahkan komunikasi, meningkatkan transparansi, dan menyediakan informasi bagi siswa, orang tua, serta masyarakat. Kami berharap platform ini dapat menjadi sarana akses cepat dan mudah untuk segala kegiatan akademik maupun non-akademik sekolah.
+                        Terima kasih kepada seluruh dewan guru, staf, komite sekolah, dan orang tua siswa atas dukungannya. Semoga kerja sama ini terus membawa kemajuan bagi anak-anak kita.
+                        Wassalamu’alaikum warahmatullahi wabarakatuh
 
-                        Salam hormat,
-                        Tri Haryani,S.Pd.
-                        Kepala SD Negeri Nyatnyono 01
                         </p>
-                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">View More</a>
                 </div>
             </div>
         </div>
@@ -469,8 +466,8 @@
                             </div>
                         </div>
                         <div class="bg-secondary p-4">
-                            <h5>Jhon Doe</h5>
-                            <p class="m-0">Web Designer</p>
+                            <h5>Indah Fitrianah,S.Pd</h5>
+                            <p class="m-0">Guru Kelas 1A</p>
                         </div>
                     </div>
                 </div>
@@ -485,8 +482,8 @@
                             </div>
                         </div>
                         <div class="bg-secondary p-4">
-                            <h5>Jhon Doe</h5>
-                            <p class="m-0">Web Designer</p>
+                            <h5>Tri Andika,S.Pd</h5>
+                            <p class="m-0">Guru Kelas 2</p>
                         </div>
                     </div>
                 </div>
@@ -501,8 +498,8 @@
                             </div>
                         </div>
                         <div class="bg-secondary p-4">
-                            <h5>Jhon Doe</h5>
-                            <p class="m-0">Web Designer</p>
+                            <h5>Sri Seswati,S.Pd.</h5>
+                            <p class="m-0">Guru Kelas 5</p>
                         </div>
                     </div>
                 </div>
@@ -517,8 +514,8 @@
                             </div>
                         </div>
                         <div class="bg-secondary p-4">
-                            <h5>Jhon Doe</h5>
-                            <p class="m-0">Web Designer</p>
+                            <h5>Achmad Choirul Anam,S.Pd.</h5>
+                            <p class="m-0">Guru Mapel PAI</p>
                         </div>
                     </div>
                 </div>
@@ -532,8 +529,8 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
-                <h1>What Say Our Students</h1>
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimoni</h5>
+                <h1>Apa Kata Murid Kami</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -571,16 +568,16 @@
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Our Blog</h5>
-                <h1>Latest From Our Blog</h1>
+                
+                <h1>Berita Terbaru</h1>
             </div>
             <div class="row pb-3">
                 <div class="col-lg-4 mb-4">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-1.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
+                            <h5 class="text-white mb-3"> Sosialisasi Bahaya Merokok dan Narkoba </h5>
+                            <p class="text-primary m-0">Juli 23, 2024</p>
                         </a>
                     </div>
                 </div>
@@ -589,7 +586,7 @@
                         <img class="img-fluid" src="img/blog-2.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
+                            <p class="text-primary m-0">Jan 01, 2025</p>
                         </a>
                     </div>
                 </div>
@@ -598,7 +595,7 @@
                         <img class="img-fluid" src="img/blog-3.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
+                            <p class="text-primary m-0">Jan 01, 2025</p>
                         </a>
                     </div>
                 </div>
@@ -614,10 +611,10 @@
             <div class="col-lg-7 col-md-12">
                 <div class="row">
                     <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">About Us</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Jl.Hasan Munadi RT.006/RW.004,Desa Nyatnyono Kec.Ungaran Barat Kab.Semarang</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>(024)76913780</p>
+                        <p><i class="fa fa-envelope mr-2"></i>sdnnyatnyono01@gmail.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -626,13 +623,13 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>PROFIL</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>BERITA</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>GALERI</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>INFO PPDB</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>KONTAK</a>
                         </div>
                     </div>
                 </div>
@@ -654,7 +651,7 @@
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                <p class="m-0 text-white">&copy; <a href="#">Copyright</a> 2025 SDN NYATNYONO 01 Semarang <a href="https://htmlcodex.com">HTML Codex</a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
