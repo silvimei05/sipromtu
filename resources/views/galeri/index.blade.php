@@ -1,5 +1,6 @@
-@extends("layouts.app")
-@section("content")                            
+@extends('layouts.app')
+@section('content')
+
 
     <!-- Header Start -->
     <div class="container-fluid page-header" style="margin-bottom: 90px;">
@@ -18,11 +19,11 @@
 
 
     <!-- Category Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="video"> <!-- ditambahkan id video -->
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Subjects</h5>
-                <h1>Explore Top Subjects</h1>
+                <h1>Explore </h1>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
@@ -104,16 +105,18 @@
 
 
     <!-- Courses Start -->
-    <div class="container-fluid py-5">
+   
+   <div class="container-fluid py-5" id="foto"> <!-- ditambahkan id foto -->
+    
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">FOTO</h5>
                 <h1>Our Popular Courses</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/course-1.jpg" alt="">
+                        <img class="img-fluid" src="img/foto1.jpg" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -223,5 +226,4 @@
         </div>
     </div>
     <!-- Courses End -->
-
-@endsection
+    @endsection
