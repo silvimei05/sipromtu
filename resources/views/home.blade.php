@@ -183,32 +183,34 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimoni</h5>
-                <h1>Apa Kata Murid Kami</h1>
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">ULASAN</h5>
+                <h1>Apa Kata Mereka??</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <h4 class="font-weight-normal mb-4">Guru berharap SD Negeri Nyatnyono 01 terus mengembangkan pembelajaran berbasis teknologi, agar siswa mahir digital tanpa melupakan nilai moral dan spiritual.</h4>
                             <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="m-0">Diah Purnamasari,S.Pd</h5>
+                            <span>Guru Kelas 1Bn</span>
                         </div>
+                        
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <h4 class="font-weight-normal mb-4">Guru berharap setiap siswa meraih prestasi unggul, baik akademik maupun non-akademik, agar mampu bersaing di tingkat lokal hingga internasional</h4>
                             <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="m-0">Imron Rosyadi,S.Pd.SD</h5>
+                            <span>Guru Kelas 3</span>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <h4 class="font-weight-normal mb-4">Tenaga administrasi SD Negeri Nyatnyono 01 berupaya meningkatkan efisiensi dan kualitas layanan agar kebutuhan siswa, guru, dan orang tua terpenuhi dengan cepat, tepat, dan profesional demi kelancaran proses belajar mengajar</h4>
                             <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h5 class="m-0">Siti Umamul Latifah, A.Md</h5>
+                            <span>Tenaga Administrasi</span>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -230,8 +232,8 @@
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-1.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3"> Sosialisasi Bahaya Merokok dan Narkoba </h5>
-                            <p class="text-primary m-0">Juli 23, 2024</p>
+                            <h5 class="text-white mb-3"> Juara Harapan 3 Pesta Siaga KWARCAB Kab. Semarang </h5>
+                            <p class="text-primary m-0">April 26, 2025</p>
                         </a>
                     </div>
                 </div>
@@ -239,8 +241,8 @@
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-2.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                            <p class="text-primary m-0">Jan 01, 2025</p>
+                            <h5 class="text-white mb-3">Kegiatan LITERASI Memperingati Bulan Bahasa </h5>
+                            <p class="text-primary m-0">Okt 28, 2024</p>
                         </a>
                     </div>
                 </div>
@@ -248,8 +250,8 @@
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-3.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                            <p class="text-primary m-0">Jan 01, 2025</p>
+                            <h5 class="text-white mb-3">Pawai Santri Di Desa Nyatnyono</h5>
+                            <p class="text-primary m-0">Okt 22, 2024</p>
                         </a>
                     </div>
                 </div>
