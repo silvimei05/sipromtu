@@ -1,38 +1,32 @@
 <?php
 
-use App\Models\VideoAktivitas;
+use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\GaleriController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InfoController;
+use App\Http\Controllers\KontakController;
+use App\Http\Controllers\ProfilController;
 use Illuminate\Support\Facades\Route;
 
+// Home Menu
+Route::get('/halaman-utama', [HomeController::class, 'index'])->name('home');
 
-Route::get('/', function () {
-    $videos = VideoAktivitas::all(['link']);
+// Profil Menu
+Route::get('/sambutan-kepala-sekolah', [ProfilController::class, 'sambutanKepalaSekolah'])->name('profil.sambutan_kepala_sekolah');
+Route::get('/guru', [ProfilController::class, 'guru'])->name('profil.guru');
+Route::get('/visi-misi', [ProfilController::class, 'visiMisi'])->name('profil.visiMisi');
+Route::get('/fasilitas', [ProfilController::class, 'fasilitas'])->name('profil.fasilitas');
+Route::get('/sejarah', [ProfilController::class, 'sejarah'])->name('profil.sejarah');
 
-    $videos = $videos->map(function ($video) {
-        $videoId = '';
+// Berita Menu
+Route::get('/berita', [BeritaController::class, 'berita'])->name('berita');
 
-        // Cek apakah link mengandung parameter ?v= (format YouTube biasa)
-        if (strpos($video->link, 'youtube.com/watch') !== false) {
-            parse_str(parse_url($video->link, PHP_URL_QUERY), $query);
-            $videoId = $query['v'] ?? '';
-        }
+// Galeri Menu
+Route::get('/foto', [GaleriController::class, 'foto'])->name('galeri.foto');
+Route::get('/video', [GaleriController::class, 'video'])->name('galeri.video');
 
-        // Cek apakah link dalam format youtu.be
-        elseif (strpos($video->link, 'youtu.be') !== false) {
-            $path = parse_url($video->link, PHP_URL_PATH);
-            $videoId = trim($path, '/');
-        }
+// Info Menu
+Route::get('/info', [InfoController::class, 'ppdb'])->name('ppdb');
 
-        // Set embed URL
-        $video->embed_url = $videoId ? "https://www.youtube.com/embed/{$videoId}?rel=0" : null;
-
-        return $video;
-    });
-
-    return view('home', compact('videos'));
-});
-
-Route::get('/berita', fn() => view('berita.index'));
-Route::get('/contact', fn() => view('kontak.index'));
-Route::get('/home', fn() => view('home.index'));
-Route::get('/gallery', fn() => view('galeri.index'));
-Route::get('/about', fn() => view('About'));
+// Kontak Menu
+Route::get('/kontak', [KontakController::class, 'kontak'])->name('kontak');

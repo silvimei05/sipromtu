@@ -1,4 +1,4 @@
 @extends('layouts.app')
 @section('content')
-HALLO SAMBUTAN KEPSEK
+HALLO VISI MISI
 @endsection
