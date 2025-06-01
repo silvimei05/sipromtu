@@ -17,7 +17,6 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle {{ request()->routeIs('profil.*') ? 'active' : '' }}" data-toggle="dropdown">PROFIL</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="{{route('profil.sambutan_kepala_sekolah')}}" class="dropdown-item {{ request()->routeIs('profil.sambutan_kepala_sekolah') ? 'active' : '' }}">Sambutan Kepala Sekolah</a>
                                 <a href="{{route('profil.sejarah')}}" class="dropdown-item {{ request()->routeIs('profil.sejarah') ? 'active' : '' }}">Sejarah</a>
                                 <a href="{{route('profil.visiMisi')}}" class="dropdown-item {{ request()->routeIs('profil.visiMisi') ? 'active' : '' }}">Visi & Misi</a>
                                 <a href="{{route('profil.fasilitas')}}" class="dropdown-item {{ request()->routeIs('profil.fasilitas') ? 'active' : '' }}">Fasilitas</a>
