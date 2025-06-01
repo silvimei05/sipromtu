@@ -30,7 +30,7 @@ class FotoAktivitasResource extends Resource
                 Forms\Components\Textarea::make('deskripsi')
                     ->required()
                     ->columnSpanFull(),
-                Forms\Components\Textarea::make('file')
+                Forms\Components\FileUpload::make('file')
                     ->required()
                     ->columnSpanFull(),
             ]);
@@ -41,6 +41,8 @@ class FotoAktivitasResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('judul')
+                    ->searchable(),
+                Tables\Columns\ImageColumn::make('file')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

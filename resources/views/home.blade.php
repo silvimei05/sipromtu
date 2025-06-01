@@ -269,15 +269,15 @@
             </div>
             <div class="row">
                 
-                @foreach ([1,2,3,4,5,6] as $item)
+                @foreach ($fotos as $foto)
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/course-1.jpg" alt="">
+                        <img class="img-fluid" src="img/ft4.jpg" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-end mb-3">
-                                <small class="m-0"><i class="far fa-calendar text-primary mr-2"></i>01 Okt 2024</small>
+                                <small class="m-0"><i class="far fa-calendar text-primary mr-2"></i>{{$foto->created_at}}</small>
                             </div>
-                            <a class="h5" href="">Web design & development courses for beginner</a>
+                            <a class="h5" href="">{{$foto->judul}}</a>
                         </div>
                     </div>
                 </div>

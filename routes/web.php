@@ -9,7 +9,7 @@ use App\Http\Controllers\ProfilController;
 use Illuminate\Support\Facades\Route;
 
 // Home Menu
-Route::get('/halaman-utama', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Profil Menu
 Route::get('/sambutan-kepala-sekolah', [ProfilController::class, 'sambutanKepalaSekolah'])->name('profil.sambutan_kepala_sekolah');

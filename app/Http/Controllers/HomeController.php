@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\VideoAktivitas;
+use App\Models\FotoAktivitas;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -32,6 +33,9 @@ class HomeController extends Controller
             return $video;
         });
 
-        return view('home', compact('videos'));
+
+        $fotos = FotoAktivitas::all();
+
+        return view('home', compact('videos', 'fotos'));
     }
 }
