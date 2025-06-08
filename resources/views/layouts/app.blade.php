@@ -8,6 +8,8 @@
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -86,12 +88,17 @@
                         <p><i class="fa fa-phone-alt mr-2"></i>(024)76913780</p>
                         <p><i class="fa fa-envelope mr-2"></i>sdnnyatnyono01@gmail.com</p>
                         <div class="d-flex justify-content-start mt-4">
-                            <a class="btn btn-outline-light btn-square mr-2" href="https://www.youtube.com/@sdnnyatnyono01"><i
-                                    class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-square" href="https://www.instagram.com/sdnnyatnyono01"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light text-white btn-square mx-2" href="https://www.tiktok.com/@sdnnyatnyonosatu">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path fill="#ffffff" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                            <a class="btn btn-outline-light btn-square mr-2"
+                                href="https://www.youtube.com/@sdnnyatnyono01"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-square"
+                                href="https://www.instagram.com/sdnnyatnyono01"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light text-white btn-square mx-2"
+                                href="https://www.tiktok.com/@sdnnyatnyonosatu">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20"
+                                    height="20">
+                                    <path fill="#ffffff"
+                                        d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -129,6 +136,10 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
             class="fa fa-angle-double-up"></i></a>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+    </script>
 
     <!-- JavaScript Libraries -->
     <!-- Make sure you put this AFTER Leaflet's CSS -->

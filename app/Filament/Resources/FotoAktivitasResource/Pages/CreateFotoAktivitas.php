@@ -9,4 +9,9 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateFotoAktivitas extends CreateRecord
 {
     protected static string $resource = FotoAktivitasResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }

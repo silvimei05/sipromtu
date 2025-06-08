@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\FotoAktivitasResource\Pages;
+namespace App\Filament\Resources\GuruResource\Pages;
 
-use App\Filament\Resources\FotoAktivitasResource;
+use App\Filament\Resources\GuruResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditFotoAktivitas extends EditRecord
+class EditGuru extends EditRecord
 {
-    protected static string $resource = FotoAktivitasResource::class;
+    protected static string $resource = GuruResource::class;
 
     protected function getHeaderActions(): array
     {

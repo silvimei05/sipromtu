@@ -20,7 +20,7 @@
                                 <a href="{{route('profil.sejarah')}}" class="dropdown-item {{ request()->routeIs('profil.sejarah') ? 'active' : '' }}">Sejarah</a>
                                 <a href="{{route('profil.visiMisi')}}" class="dropdown-item {{ request()->routeIs('profil.visiMisi') ? 'active' : '' }}">Visi & Misi</a>
                                 <a href="{{route('profil.fasilitas')}}" class="dropdown-item {{ request()->routeIs('profil.fasilitas') ? 'active' : '' }}">Fasilitas</a>
-                                <a href="{{route('profil.guru')}}" class="dropdown-item {{ request()->routeIs('profil.guru') ? 'active' : '' }}">Guru</a>
+                                <a href="{{route('profil.guru')}}" class="dropdown-item {{ request()->routeIs('profil.guru') ? 'active' : '' }}">Guru & Karyawan</a>
                             </div>
                         </div>
                         <a href="{{route('berita')}}" class="nav-item nav-link {{ request()->routeIs('berita') ? 'active' : '' }}">BERITA</a>

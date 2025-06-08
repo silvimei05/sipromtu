@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\VideoAktivitas;
 use App\Models\FotoAktivitas;
+use App\Models\Guru;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -36,6 +37,8 @@ class HomeController extends Controller
 
         $fotos = FotoAktivitas::all();
 
-        return view('home', compact('videos', 'fotos'));
+        $fourGurus = Guru::take(4)->get();
+
+        return view('home', compact('videos', 'fotos', 'fourGurus'));
     }
 }
