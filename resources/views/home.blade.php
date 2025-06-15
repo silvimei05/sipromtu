@@ -129,7 +129,7 @@
                 <h1>Meet Our Teachers</h1>
             </div>
             <div class="row">
-                {{-- @foreach ($fourGurus as $guru)
+                @foreach ($fourGurus as $guru)
                 <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
@@ -149,8 +149,8 @@
                         </div>
                     </div>
                 </div>
-                @endforeach --}}
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
+                @endforeach
+                {{-- <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
                             <img class="img-fluid" src="img/team-1.jpg" alt="">
@@ -225,7 +225,7 @@
                             <p class="m-0">Guru Mapel PAI</p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
