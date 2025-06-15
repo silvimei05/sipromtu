@@ -130,25 +130,26 @@
             </div>
             <div class="row">
                 @foreach ($fourGurus as $guru)
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
-                    <div class="team-item rounded overflow-hidden mb-2">
-                        <div class="team-img position-relative">
-                            <img class="img-fluid" src="{{ asset('storage/' . $guru->foto) }}" alt="" style="height: 500px; object-fit: cover;">
-                            <div class="team-social">
-                                <a class="btn btn-outline-light btn-square mx-1" href="#"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-light btn-square mx-1" href="#"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light btn-square mx-1" href="#"><i
-                                        class="fab fa-linkedin-in"></i></a>
+                    <div class="col-md-6 col-lg-3 text-center team mb-4">
+                        <div class="team-item rounded overflow-hidden mb-2">
+                            <div class="team-img position-relative">
+                                <img class="img-fluid" src="{{ asset("storage/" . $guru->foto) }}" alt=""
+                                    style="height: 500px; object-fit: cover;">
+                                <div class="team-social">
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-light btn-square mx-1" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-secondary p-4">
+                                <h5>{{ $guru->name }}</h5>
+                                <p class="m-0">{{ $guru->jabatan }}</p>
                             </div>
                         </div>
-                        <div class="bg-secondary p-4">
-                            <h5>{{$guru->name}}</h5>
-                            <p class="m-0">{{$guru->jabatan}}</p>
-                        </div>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -254,7 +255,7 @@
                 @foreach ($fotos as $foto)
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/ft4.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset("storage/" . $foto->file) }}" alt="" style="height: 262px; width: 350px;">
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-end mb-3">
                                     <small class="m-0"><i
@@ -313,7 +314,9 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        L.marker([-7.15, 110.4], {icon: greenIcon}).addTo(map)
+        L.marker([-7.15, 110.4], {
+                icon: greenIcon
+            }).addTo(map)
             .bindPopup('SDN Nyatnyono 01<br>Jl.Hasan Munadi RT.006/RW.004,Desa Nyatnyono Kec.Ungaran Barat Kab.Semarang')
             .openPopup();
     </script>
