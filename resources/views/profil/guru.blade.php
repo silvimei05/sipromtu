@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-        @endfor
+        @endforeach
     </div>
 </div>
 @endsection
