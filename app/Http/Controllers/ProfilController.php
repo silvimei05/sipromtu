@@ -18,7 +18,8 @@ class ProfilController extends Controller
 
     public function guru()
     {
-        return view('profil.guru');
+        $gurus = Guru::all();
+        return view('profil.guru', compact('gurus'));
     }
 
     public function sejarah()
