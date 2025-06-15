@@ -133,7 +133,7 @@
                 <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
-                            <img class="img-fluid" src="{{ $guru->foto && file_exists(public_path('storage/' . $guru->foto)) ? asset('/storage/' . $guru->foto) : asset('img/default-guru.jpg') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('storage/' . $guru->foto) }}" alt="">
                             <div class="team-social">
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i
                                         class="fab fa-twitter"></i></a>
