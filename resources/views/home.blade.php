@@ -133,7 +133,7 @@
                 <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
-                            <img class="img-fluid" src="{{ asset('storage/' . $guru->foto) }}" alt="" style="height: 300px; object-fit: cover;">
+                            <img class="img-fluid" src="{{ asset('storage/' . $guru->foto) }}" alt="" style="height: 500px; object-fit: cover;">
                             <div class="team-social">
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i
                                         class="fab fa-twitter"></i></a>
