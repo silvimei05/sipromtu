@@ -212,7 +212,7 @@
             <div class="row pb-3">
                 <div class="col-lg-4 mb-4">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-1.jpg" alt="">
+                        <img class="img-fluid" src="img/blog-1.jpg" style="height: 467" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
                             <h5 class="text-white mb-3"> Juara Harapan 3 Pesta Siaga KWARCAB Kab. Semarang </h5>
                             <p class="text-primary m-0">April 26, 2025</p>
@@ -221,7 +221,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-2.jpg" alt="">
+                        <img class="img-fluid" src="img/blog-2.jpg" style="height: 467" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
                             <h5 class="text-white mb-3">Kegiatan LITERASI Memperingati Bulan Bahasa </h5>
                             <p class="text-primary m-0">Okt 28, 2024</p>
@@ -230,7 +230,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-3.jpg" alt="">
+                        <img class="img-fluid" src="img/blog-3.jpg" style="height: 467" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
                             <h5 class="text-white mb-3">Pawai Santri Di Desa Nyatnyono</h5>
                             <p class="text-primary m-0">Okt 22, 2024</p>
