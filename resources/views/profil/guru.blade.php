@@ -5,7 +5,7 @@
         @foreach ($gurus as $guru)
             <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
                 <div class="card shadow-sm w-100">
-                    <img class="img-fluid" src="{{ asset('storage/' . $guru->foto) }}" alt="" height="500" class="card-img-top" alt="Card image">
+                    <img class="img-fluid" src="{{ asset('storage/' . $guru->foto) }}" alt="" style="height: 500px" class="card-img-top" alt="Card image">
                     <div class="card-body d-flex flex-column rounded-pill">
                         <h5 class="card-title">{{ $guru->name }}</h5>
                         <p class="card-text flex-grow-1">{{$guru->jabatan}}</p>
