@@ -6,6 +6,7 @@ use App\Models\VideoAktivitas;
 use App\Models\FotoAktivitas;
 use App\Models\Guru;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -36,7 +37,7 @@ class HomeController extends Controller
 
 
         $fotos = FotoAktivitas::all()->map(function ($foto) {
-            $foto->created_at = $foto->created_at ? $foto->created_at->format('d-m-Y') : null;
+            $foto->created_at = $foto->created_at ? Carbon::parse($foto->created_at)->format('d-m-Y') : null;
             return $foto;
         });
 
