@@ -36,7 +36,7 @@ class HomeController extends Controller
 
 
         $fotos = FotoAktivitas::all()->map(function ($foto) {
-            $foto->created_at_formatted = $foto->created_at ? $foto->created_at->format('d-m-Y') : null;
+            $foto->created_at = $foto->created_at ? $foto->created_at->format('d-m-Y') : null;
             return $foto;
         });
 
