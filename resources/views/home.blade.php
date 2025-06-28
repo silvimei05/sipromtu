@@ -207,7 +207,6 @@
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
-
                 <h1>Berita Terbaru</h1>
             </div>
             <div class="row pb-3">
@@ -258,8 +257,7 @@
                             <img class="img-fluid" src="{{ asset("storage/" . $foto->file) }}" alt="" style="height: 262px; width: 350px;">
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-end mb-3">
-                                    <small class="m-0"><i
-                                            class="far fa-calendar text-primary mr-2"></i>{{ $foto->created_at }}</small>
+                                    <small class="m-0"><i class="far fa-calendar text-primary mr-2"></i>{{ $foto->created_at }}</small>
                                 </div>
                                 <a class="h5" href="">{{ $foto->judul }}</a>
                             </div>

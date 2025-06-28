@@ -22,9 +22,11 @@ Route::get('/sejarah', [ProfilController::class, 'sejarah'])->name('profil.sejar
 Route::get('/berita', [BeritaController::class, 'berita'])->name('berita');
 
 // Galeri Menu
-Route::get('/foto', [GaleriController::class, 'foto'])->name('galeri.foto');
-Route::get('/video', [GaleriController::class, 'video'])->name('galeri.video');
-
+Route::prefix('galeri')->group(function () {
+    Route::get('/foto', [GaleriController::class, 'foto'])->name('galeri.foto');
+    Route::get('/video', [GaleriController::class, 'video'])->name('galeri.video');
+});
+    
 // Info Menu
 Route::get('/info', [InfoController::class, 'ppdb'])->name('ppdb');
 

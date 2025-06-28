@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\FotoAktivitas;
 use Illuminate\Http\Request;
 
 class GaleriController extends Controller
@@ -13,7 +14,8 @@ class GaleriController extends Controller
      */
     public function foto()
     {
-        return view('galeri.foto');
+        $fotos = FotoAktivitas::all();
+        return view('galeri.foto', compact('fotos'));
     }
 
     /**
