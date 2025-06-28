@@ -2,38 +2,35 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\GuruResource\Pages;
-use App\Filament\Resources\GuruResource\RelationManagers;
-use App\Models\Guru;
+use App\Filament\Resources\PpdbResource\Pages;
+use App\Filament\Resources\PpdbResource\RelationManagers;
+use App\Models\Ppdb;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class GuruResource extends Resource
+class PpdbResource extends Resource
 {
-    protected static ?string $model = Guru::class;
+    protected static ?string $model = Ppdb::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
+                Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('jabatan')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\Textarea::make('teks_harapan')
-                    ->required()
+                Forms\Components\Textarea::make('description')
                     ->columnSpanFull(),
-                Forms\Components\FileUpload::make('foto')
-                    ->directory('guru-fotos')
+                Forms\Components\FileUpload::make('image')
+                    ->directory('ppdb-images')
                     ->required()
                     ->columnSpanFull(),
             ]);
@@ -43,17 +40,15 @@ class GuruResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
+                Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('jabatan')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('teks_harapan')
+                Tables\Columns\TextColumn::make('description')
                     ->limit(50)
                     ->toggleable(),
-                Tables\Columns\ImageColumn::make('foto')
+                ImageColumn::make('image')
+                    ->disk('public')
+                    ->directory('ppdb-images')
                     ->size(100)
-                    ->circular()
-                    ->toggleable()
             ])
             ->filters([
                 //
@@ -78,9 +73,9 @@ class GuruResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListGurus::route('/'),
-            'create' => Pages\CreateGuru::route('/create'),
-            'edit' => Pages\EditGuru::route('/{record}/edit'),
+            'index' => Pages\ListPpdbs::route('/'),
+            'create' => Pages\CreatePpdb::route('/create'),
+            'edit' => Pages\EditPpdb::route('/{record}/edit'),
         ];
     }
 }
