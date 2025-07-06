@@ -213,7 +213,7 @@
                 @foreach ($berita_top_three as $berita)
                     <div class="col-lg-4 mb-4">
                         <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                            <img class="img-fluid" src="img/blog-1.jpg" style="height: 467px, width: 350px"
+                            <img class="img-fluid" src="{{ asset("storage/" . $berita->gambar) }}" style="height: 467px, width: 350px"
                                 alt="">
                             <a class="blog-overlay text-decoration-none" href="{{ route('berita.show', ['slug' => $berita->slug])}}">
                                 <h5 class="text-white mb-3"> {{ $berita->judul }} </h5>
