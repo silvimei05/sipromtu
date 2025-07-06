@@ -14,7 +14,7 @@
                 </div>
                 <p style="text-align: justify"> 
 
-                    Terwujudnya  peserta didik yang  berbudi pekerti luhur, unggul dalam imtaq, berprestasi, bertoleransi,  dan berkepribadian sesuai  profil pelajar Pancasila.
+                    "Terwujudnya peserta didik yang memiliki budi pekerti luhur, mampu mengamalkan dan menghayati nilai-nilai keimanan dan ketakwaan kepada Tuhan Yang Maha Esa (imtaq) dengan baik, berprestasi dalam berbagai bidang, menjunjung tinggi sikap toleransi terhadap sesama, serta memiliki kepribadian yang kuat dan sesuai dengan karakter serta nilai-nilai yang tercermin dalam profil pelajar Pancasila."
                     
                    
             </div>
