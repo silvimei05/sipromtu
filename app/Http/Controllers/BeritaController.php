@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
 use Illuminate\Http\Request;
 
 class BeritaController extends Controller
@@ -13,6 +14,16 @@ class BeritaController extends Controller
      */
     public function berita()
     {
-        return view('berita.index');
+        $beritas = Berita::all();
+        return view('berita.index', compact('beritas'));
     }
+
+
+    public function show($slug)
+    {
+        $berita = Berita::where('slug', $slug)->first();
+        return view('berita.detail', compact('berita'));
+    }
+
+
 }

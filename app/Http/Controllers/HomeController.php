@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
 use App\Models\VideoAktivitas;
 use App\Models\FotoAktivitas;
 use App\Models\Guru;
@@ -43,6 +44,8 @@ class HomeController extends Controller
 
         $fourGurus = Guru::take(4)->get();
 
-        return view('home', compact('videos', 'fotos', 'fourGurus'));
+        $berita_top_three = Berita::orderBy('created_at', 'desc')->take(3)->get();
+
+        return view('home', compact('videos', 'fotos', 'fourGurus', 'berita_top_three'));
     }
 }

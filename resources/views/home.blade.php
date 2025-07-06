@@ -203,44 +203,33 @@
     <!-- Testimonial End -->
 
 
-    <!-- Blog Start -->
+    <!-- Berita Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
                 <h1>Berita Terbaru</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-4 mb-4">
-                    <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-1.jpg" style="height: 467px, width: 350px" alt="">
-                        <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3"> Juara Harapan 3 Pesta Siaga KWARCAB Kab. Semarang </h5>
-                            <p class="text-primary m-0">April 26, 2025</p>
-                        </a>
+                @foreach ($berita_top_three as $berita)
+                    <div class="col-lg-4 mb-4">
+                        <div class="blog-item position-relative overflow-hidden rounded mb-2">
+                            <img class="img-fluid" src="img/blog-1.jpg" style="height: 467px, width: 350px"
+                                alt="">
+                            <a class="blog-overlay text-decoration-none" href="{{ route('berita.show', ['slug' => $berita->slug])}}">
+                                <h5 class="text-white mb-3"> {{ $berita->judul }} </h5>
+                                <p class="text-primary m-0"> {{$berita->created_at_human}} </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-2.jpg" style="height: 467px, width: 350px" alt="">
-                        <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Kegiatan LITERASI Memperingati Bulan Bahasa </h5>
-                            <p class="text-primary m-0">Okt 28, 2024</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-3.jpg" style="height: 467px, width: 350px" alt="">
-                        <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Pawai Santri Di Desa Nyatnyono</h5>
-                            <p class="text-primary m-0">Okt 22, 2024</p>
-                        </a>
-                    </div>
-                </div>
+                @endforeach
+            </div>
+            <div class="text-center">
+                <a class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2" href="{{ route("berita.index") }}">Lihat
+                    Semua Berita</a>
             </div>
         </div>
     </div>
-    <!-- Blog End -->
+    <!-- Berita End -->
 
     <!-- Foto Aktivitas Start -->
     <div class="container-fluid py-5">
@@ -254,10 +243,12 @@
                 @foreach ($fotos as $foto)
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="rounded overflow-hidden mb-2">
-                            <img class="img-fluid" src="{{ asset("storage/" . $foto->file) }}" alt="" style="height: 262px; width: 350px;">
+                            <img class="img-fluid" src="{{ asset("storage/" . $foto->file) }}" alt=""
+                                style="height: 262px; width: 350px;">
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-end mb-3">
-                                    <small class="m-0"><i class="far fa-calendar text-primary mr-2"></i>{{ $foto->created_at }}</small>
+                                    <small class="m-0"><i
+                                            class="far fa-calendar text-primary mr-2"></i>{{ $foto->created_at }}</small>
                                 </div>
                                 <a class="h5" href="">{{ $foto->judul }}</a>
                             </div>

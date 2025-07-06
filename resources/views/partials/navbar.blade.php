@@ -23,7 +23,7 @@
                                 <a href="{{route('profil.guru')}}" class="dropdown-item {{ request()->routeIs('profil.guru') ? 'active' : '' }}">Guru & Karyawan</a>
                             </div>
                         </div>
-                        <a href="{{route('berita')}}" class="nav-item nav-link {{ request()->routeIs('berita') ? 'active' : '' }}">BERITA</a>
+                        <a href="{{route('berita.index')}}" class="nav-item nav-link {{ request()->routeIs('berita.*') ? 'active' : '' }}">BERITA</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle {{ request()->routeIs('galeri.*') ? 'active' : '' }}" data-toggle="dropdown">GALERI</a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -35,7 +35,6 @@
                         <a href="{{route('ppdb')}}" class="nav-item nav-link {{ request()->routeIs('ppdb') ? 'active' : '' }}">INFO PPDB</a>
                         <a href="{{route('kontak')}}" class="nav-item nav-link {{ request()->routeIs('kontak') ? 'active' : '' }}">KONTAK</a>
                     </div>
-                    <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Daftar Sekarang</a>
                 </div>
             </nav>
         </div>

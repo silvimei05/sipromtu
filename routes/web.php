@@ -19,7 +19,11 @@ Route::get('/fasilitas', [ProfilController::class, 'fasilitas'])->name('profil.f
 Route::get('/sejarah', [ProfilController::class, 'sejarah'])->name('profil.sejarah');
 
 // Berita Menu
-Route::get('/berita', [BeritaController::class, 'berita'])->name('berita');
+
+Route::prefix('berita')->controller(BeritaController::class)->group(function () {
+    Route::get('/', 'berita')->name('berita.index');
+    Route::get('/{slug}', 'show')->name('berita.show');
+});
 
 // Galeri Menu
 Route::prefix('galeri')->group(function () {
