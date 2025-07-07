@@ -92,22 +92,13 @@
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="mb-4">
                         <h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Sejarah Sekolah</h1>
-                        <h5 class="text-white">Kamu Harus Tahu!!</h5>
+                        <h5 class="text-white">Kamu Harus Tahu!</h5>
                     </div>
-                    <p class="text-white text-justify"style="text-indent: 30px"> SD Negeri Nyatnyono 01 didirikan pada 1
-                        Agustus 1987 di Desa Nyatnyono, Kabupaten Semarang, di atas lahan seluas 2.475 m². Terletak
-                        strategis di pusat desa, dekat kantor pemerintahan, puskesmas, madrasah, dan wisata religi, sekolah
-                        ini tumbuh dalam lingkungan yang mendukung pendidikan berbasis budaya lokal. Sejak awal, SD ini
-                        berkomitmen memberikan layanan pendidikan berkualitas dengan fokus pada pembentukan karakter dan
-                        pengembangan pengetahuan. Pada tahun 2015, sekolah bergabung dengan SD Negeri Nyatnyono 03 untuk
-                        meningkatkan mutu dan manajemen pendidikan. SD ini memiliki dua gedung utama: gedung atas untuk
-                        kegiatan belajar dan ekstrakurikuler seperti menari, serta gedung bawah untuk administrasi dan ruang
-                        diskusi. Didukung masyarakat dan pemerintah, SD Negeri Nyatnyono 01 terus berkembang menjadi pusat
-                        pendidikan dasar unggulan di wilayahnya.</p>
+                    <p class="text-white text-justify"style="text-indent: 30px"> Didirikan pada 1 Agustus 1987, SD Negeri Nyatnyono 01 hadir di jantung Desa Nyatnyono, Kabupaten Semarang. Berada di lokasi strategis dekat kantor desa, puskesmas, madrasah, dan wisata religi, sekolah ini tumbuh dalam lingkungan yang mendukung pendidikan berbasis budaya lokal. Dengan komitmen membentuk karakter dan meningkatkan mutu, SD ini terus berkembang menjadi sekolah unggulan, apalagi sejak bergabung dengan SD Negeri Nyatnyono 03 pada tahun 2015.</p>
                     <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Fasilitas </li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Ekstrakulikuler</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Tempat strategis.</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>🏫 Fasilitas Lengkap</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>🎯 Ekstrakurikuler Pilihan</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>📍 Lokasi Strategis</li>
                     </ul>
                 </div>
                 <div class="col-lg-5">
