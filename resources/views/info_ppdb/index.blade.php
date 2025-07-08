@@ -6,7 +6,7 @@
                 <div class="col d-flex align-items-stretch">
                     <div class="card h-100 shadow-sm">
                         <div class="card overflow-hidden" style="width: 255px; height: 200px; cursor: pointer;"
-                            data-bs-toggle="modal" data-bs-target="#imageModal{{$info->id}}">
+                            data-bs-toggle="modal" data-bs-target="#imageModal{{ $info->id }}">
                             <img src="{{ asset("storage/" . $info->image) }}" alt="Pengumuman"
                                 class="card-img-top img-thumbnail" style="object-fit: cover;" />
                         </div>
@@ -15,17 +15,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal -->
-                <div class="modal fade" id="imageModal{{$info->id}}" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-body p-0">
-                                <img src="{{ asset("storage/" . $info->image) }}" class="img-fluid w-100" alt="Pengumuman">
-                            </div>
+            @endforeach
+        </div>
+        <!-- Modal -->
+        @foreach ($infos as $info)
+            <div class="modal fade" id="imageModal{{ $info->id }}" tabindex="-1" aria-labelledby="imageModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <img src="{{ asset("storage/" . $info->image) }}" class="img-fluid w-100" alt="Pengumuman">
                         </div>
                     </div>
                 </div>
-            @endforeach
-        </div>
+            </div>
+        @endforeach
     </div>
 @endsection
