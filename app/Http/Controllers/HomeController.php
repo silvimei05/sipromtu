@@ -36,12 +36,11 @@ class HomeController extends Controller
             return $video;
         });
 
-        $fotos = FotoAktivitas::orderBy('created_at', 'desc') // Order by created_at in descending order
-            ->take(3)
-            ->map(function ($foto) {
-                $foto->created_at = $foto->created_at ? Carbon::parse($foto->created_at)->format('d-m-Y') : null;
-                return $foto;
-            });
+
+        $fotos = FotoAktivitas::all()->map(function ($foto) {
+            $foto->created_at = $foto->created_at ? Carbon::parse($foto->created_at)->format('d-m-Y') : null;
+            return $foto;
+        });
 
         $fourGurus = Guru::take(4)->get();
 
