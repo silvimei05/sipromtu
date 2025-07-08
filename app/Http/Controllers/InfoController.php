@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ppdb;
 use Illuminate\Http\Request;
 
 class InfoController extends Controller
@@ -13,6 +14,7 @@ class InfoController extends Controller
      */
     public function ppdb()
     {
-        return view('info_ppdb.index');
+        $infos = Ppdb::all();
+        return view('info_ppdb.index', compact('infos'));
     }
 }
