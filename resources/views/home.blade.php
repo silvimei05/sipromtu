@@ -166,7 +166,7 @@
                         @foreach ($testimonis as $testimoni)
                             <div class="text-center">
                                 <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                {!! $testimoni->text !!}
+                                {!! $testimoni->teks !!}
                                 <img class="img-fluid mx-auto mb-3" src="{{ asset("storage/" . $testimoni->foto) }}" alt="">
                                 <h5 class="m-0">{{ $testimoni->nama }}</h5>
                                 <span>{{ $testimoni->jabatan }}</span>
