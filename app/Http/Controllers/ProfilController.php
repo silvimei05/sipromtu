@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Guru;
+use App\Models\Fasilitas;
 use Illuminate\Http\Request;
 
 class ProfilController extends Controller
@@ -30,7 +31,8 @@ class ProfilController extends Controller
 
     public function fasilitas()
     {
-        return view('profil.fasilitas');
+        $fasilitas = Fasilitas::all('nama','gambar');
+        return view('profil.fasilitas', compact('fasilitas'));
     }
 
 
