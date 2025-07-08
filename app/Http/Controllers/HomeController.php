@@ -36,10 +36,13 @@ class HomeController extends Controller
             return $video;
         });
 
-        $fotos = FotoAktivitas::take(3)->map(function ($foto) {
-            $foto->created_at = $foto->created_at ? Carbon::parse($foto->created_at)->format('d-m-Y') : null;
-            return $foto;
-        });
+        $fotos = FotoAktivitas::orderBy('created_at', 'desc') // Still the Builder
+            ->take(3)                       // Still the Builder
+            ->get()                         // Execute the query and get a Collection
+            ->map(function ($foto) {        // Now you can call map() on the Collection
+                $foto->created_at = $foto->created_at ? Carbon::parse($foto->created_at)->format('d-m-Y') : null;
+                return $foto;
+            });
 
         $fourGurus = Guru::take(4)->get();
 
