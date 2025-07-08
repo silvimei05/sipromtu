@@ -40,10 +40,9 @@ class PpdbResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                ImageColumn::make('image')
-                    ->disk('public')
-                    ->directory('ppdb-images')
+                Tables\Columns\ImageColumn::make('image')
                     ->size(100)
+                    ->toggleable()
             ])
             ->filters([
                 //
