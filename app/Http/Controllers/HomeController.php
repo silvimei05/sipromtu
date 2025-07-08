@@ -37,7 +37,7 @@ class HomeController extends Controller
         });
 
 
-        $fotos = FotoAktivitas::all()->map(function ($foto) {
+        $fotos = FotoAktivitas::take(3)->map(function ($foto) {
             $foto->created_at = $foto->created_at ? Carbon::parse($foto->created_at)->format('d-m-Y') : null;
             return $foto;
         });
