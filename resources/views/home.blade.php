@@ -166,13 +166,13 @@
                         @foreach ($testimonis as $testimoni)
                             <div class="text-center">
                                 <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                <h4 class="font-weight-normal mb-4">{!! $testimoni->text !!}</h4>
+                                {!! $testimoni->text !!}
                                 <img class="img-fluid mx-auto mb-3" src="{{ asset("storage/" . $testimoni->foto) }}" alt="">
                                 <h5 class="m-0">{{ $testimoni->nama }}</h5>
                                 <span>{{ $testimoni->jabatan }}</span>
                             </div>
                         @endforeach
-                        
+
                         {{-- <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-normal mb-4">Guru berharap SD Negeri Nyatnyono 01 terus mengembangkan
