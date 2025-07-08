@@ -6,6 +6,7 @@ use App\Models\Berita;
 use App\Models\VideoAktivitas;
 use App\Models\FotoAktivitas;
 use App\Models\Guru;
+use App\Models\Testimoni;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 
@@ -47,7 +48,8 @@ class HomeController extends Controller
         $fourGurus = Guru::take(4)->get();
 
         $berita_top_three = Berita::orderBy('created_at', 'desc')->take(3)->get();
+        $testimonis = Testimoni::all();
 
-        return view('home', compact('videos', 'fotos', 'fourGurus', 'berita_top_three'));
+        return view('home', compact('videos', 'fotos', 'fourGurus', 'berita_top_three', 'testimonis'));
     }
 }

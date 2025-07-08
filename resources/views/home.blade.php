@@ -78,7 +78,6 @@
                         Wassalamu'alaikum warahmatullahi wabarakatuh
 
                     </p>
-                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">View More</a>
                 </div>
             </div>
         </div>
@@ -94,7 +93,12 @@
                         <h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Sejarah Sekolah</h1>
                         <h5 class="text-white">Kamu Harus Tahu!</h5>
                     </div>
-                    <p class="text-white text-justify"style="text-indent: 30px"> Didirikan pada 1 Agustus 1987, SD Negeri Nyatnyono 01 hadir di jantung Desa Nyatnyono, Kabupaten Semarang. Berada di lokasi strategis dekat kantor desa, puskesmas, madrasah, dan wisata religi, sekolah ini tumbuh dalam lingkungan yang mendukung pendidikan berbasis budaya lokal. Dengan komitmen membentuk karakter dan meningkatkan mutu, SD ini terus berkembang menjadi sekolah unggulan, apalagi sejak bergabung dengan SD Negeri Nyatnyono 03 pada tahun 2015.</p>
+                    <p class="text-white text-justify"style="text-indent: 30px"> Didirikan pada 1 Agustus 1987, SD Negeri
+                        Nyatnyono 01 hadir di jantung Desa Nyatnyono, Kabupaten Semarang. Berada di lokasi strategis dekat
+                        kantor desa, puskesmas, madrasah, dan wisata religi, sekolah ini tumbuh dalam lingkungan yang
+                        mendukung pendidikan berbasis budaya lokal. Dengan komitmen membentuk karakter dan meningkatkan
+                        mutu, SD ini terus berkembang menjadi sekolah unggulan, apalagi sejak bergabung dengan SD Negeri
+                        Nyatnyono 03 pada tahun 2015.</p>
                     <ul class="list-inline text-white m-0">
                         <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>🏫 Fasilitas Lengkap</li>
                         <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>🎯 Ekstrakurikuler Pilihan</li>
@@ -158,7 +162,18 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
+
+                        @foreach ($testimonis as $testimoni)
+                            <div class="text-center">
+                                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                                <h4 class="font-weight-normal mb-4">{!! $testimoni->text !!}</h4>
+                                <img class="img-fluid mx-auto mb-3" src="{{ asset("storage/" . $testimoni->foto) }}" alt="">
+                                <h5 class="m-0">{{ $testimoni->nama }}</h5>
+                                <span>{{ $testimoni->jabatan }}</span>
+                            </div>
+                        @endforeach
+                        
+                        {{-- <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-normal mb-4">Guru berharap SD Negeri Nyatnyono 01 terus mengembangkan
                                 pembelajaran berbasis teknologi, agar siswa mahir digital tanpa melupakan nilai moral dan
@@ -184,7 +199,7 @@
                             <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
                             <h5 class="m-0">Siti Umamul Latifah, A.Md</h5>
                             <span>Tenaga Administrasi</span>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -204,18 +219,20 @@
                 @foreach ($berita_top_three as $berita)
                     <div class="col-lg-4 mb-4">
                         <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                            <img class="img-fluid" src="{{ asset("storage/" . $berita->gambar) }}" style="height: 467px, width: 350px"
-                                alt="">
-                            <a class="blog-overlay text-decoration-none" href="{{ route('berita.show', ['slug' => $berita->slug])}}">
+                            <img class="img-fluid" src="{{ asset("storage/" . $berita->gambar) }}"
+                                style="height: 467px, width: 350px" alt="">
+                            <a class="blog-overlay text-decoration-none"
+                                href="{{ route("berita.show", ["slug" => $berita->slug]) }}">
                                 <h5 class="text-white mb-3"> {{ $berita->judul }} </h5>
-                                <p class="text-primary m-0"> {{$berita->created_at_human}} </p>
+                                <p class="text-primary m-0"> {{ $berita->created_at_human }} </p>
                             </a>
                         </div>
                     </div>
                 @endforeach
             </div>
             <div class="text-center">
-                <a class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2" href="{{ route("berita.index") }}">Lihat
+                <a class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2"
+                    href="{{ route("berita.index") }}">Lihat
                     Semua Berita</a>
             </div>
         </div>
@@ -265,7 +282,8 @@
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="video-item position-relative overflow-hidden rounded mb-2">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src={{ $video->embed_url }} allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src={{ $video->embed_url }}
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
