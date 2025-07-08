@@ -27,8 +27,6 @@ class PpdbResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\Textarea::make('description')
-                    ->columnSpanFull(),
                 Forms\Components\FileUpload::make('image')
                     ->directory('ppdb-images')
                     ->required()
@@ -42,9 +40,6 @@ class PpdbResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('description')
-                    ->limit(50)
-                    ->toggleable(),
                 ImageColumn::make('image')
                     ->disk('public')
                     ->directory('ppdb-images')
