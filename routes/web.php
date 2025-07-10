@@ -36,3 +36,4 @@ Route::get('/info', [InfoController::class, 'ppdb'])->name('ppdb');
 
 // Kontak Menu
 Route::get('/kontak', [KontakController::class, 'kontak'])->name('kontak');
+Route::post('/kontak/kirim', [KontakController::class, 'send'])->name('contact.send');
