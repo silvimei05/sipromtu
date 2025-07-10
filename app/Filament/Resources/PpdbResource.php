@@ -18,7 +18,8 @@ class PpdbResource extends Resource
 {
     protected static ?string $model = Ppdb::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-information-circle';
+    protected static ?string $label = "PPDB";
 
     public static function form(Form $form): Form
     {

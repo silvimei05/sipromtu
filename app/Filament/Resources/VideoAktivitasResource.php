@@ -17,7 +17,7 @@ class VideoAktivitasResource extends Resource
 {
     protected static ?string $model = VideoAktivitas::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-film';
     protected static ?string $navigationGroup = "Galeri";
 
     public static function form(Form $form): Form

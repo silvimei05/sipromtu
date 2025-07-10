@@ -17,7 +17,7 @@ class FotoAktivitasResource extends Resource
 {
     protected static ?string $model = FotoAktivitas::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-photo';
     protected static ?string $navigationGroup = "Galeri";
 
     public static function form(Form $form): Form
