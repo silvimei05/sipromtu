@@ -172,34 +172,6 @@
                                 <span>{{ $testimoni->jabatan }}</span>
                             </div>
                         @endforeach
-
-                        {{-- <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Guru berharap SD Negeri Nyatnyono 01 terus mengembangkan
-                                pembelajaran berbasis teknologi, agar siswa mahir digital tanpa melupakan nilai moral dan
-                                spiritual.</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
-                            <h5 class="m-0">Diah Purnamasari,S.Pd</h5>
-                            <span>Guru Kelas 1Bn</span>
-                        </div>
-
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Guru berharap setiap siswa meraih prestasi unggul, baik
-                                akademik maupun non-akademik, agar mampu bersaing di tingkat lokal hingga internasional</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
-                            <h5 class="m-0">Imron Rosyadi,S.Pd.SD</h5>
-                            <span>Guru Kelas 3</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Tenaga administrasi SD Negeri Nyatnyono 01 berupaya
-                                meningkatkan efisiensi dan kualitas layanan agar kebutuhan siswa, guru, dan orang tua
-                                terpenuhi dengan cepat, tepat, dan profesional demi kelancaran proses belajar mengajar</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
-                            <h5 class="m-0">Siti Umamul Latifah, A.Md</h5>
-                            <span>Tenaga Administrasi</span>
-                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -265,6 +237,10 @@
                 @endforeach
 
             </div>
+            <div class="text-center">
+                <a class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2"
+                    href="{{ route("galeri.foto") }}">Lihat Semua Foto</a>
+            </div>
         </div>
     </div>
     <!-- Foto Aktivitas End -->
@@ -289,6 +265,10 @@
                     </div>
                 @endforeach
 
+            </div>
+            <div class="text-center">
+                <a class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2"
+                    href="{{ route("galeri.video") }}">Lihat Semua Video</a>
             </div>
         </div>
     </div>

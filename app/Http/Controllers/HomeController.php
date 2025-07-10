@@ -14,7 +14,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $videos = VideoAktivitas::all(['link']);
+        $videos = VideoAktivitas::take(3)->get('link');
 
         $videos = $videos->map(function ($video) {
             $videoId = '';
