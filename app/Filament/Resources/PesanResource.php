@@ -78,4 +78,9 @@ class PesanResource extends Resource
             'index' => Pages\ListPesans::route('/'),
         ];
     }
+
+    public static function canCreate(): bool
+    {
+        return false;
+    }
 }
